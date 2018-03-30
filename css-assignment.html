@@ -1,14 +1,14 @@
 <html>
 
 <head>
-    <title> Title Here </title>
+    <title> Dolphin Webpage </title>
     <style type="text/css">
         #heading {
             background-color: #dee3ea;
-            height: 110px;
+            height: 100px;
             padding: 30px;
             text-align: center;
-            font-size: 80px;
+            font-size: 60px;
 
         }
 
@@ -20,11 +20,13 @@
         .column {
             width: 31.5%;
             float: left;
-            height: 470px;
+            height: 530px;
             background-color: #639FAB;
             margin-top: 9px;
             padding: 10px;
             margin-right: 2px;
+
+
         }
 
         #menu {
@@ -36,9 +38,9 @@
 
 
         a {
-          text-decoration: none;
-          color: #ffffff;
-          font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
         }
 
 
@@ -48,36 +50,45 @@
 
         .menu-item {
             margin: 15px;
-
         }
 
-        #footer {
-            clear: both;
-            background-color: #dee3ea;
+        #facts {
+          text-align: left;
         }
     </style>
 </head>
 
 <body>
     <div id="heading">
-        This is my heading
+        Everything you need to know about Dolphins
     </div>
 
     <div id="menu">
-        <span class="menu-item"> <a href=""> Menu1 </a> </span>|
-        <span class="menu-item"> <a href=""> Menu2 </a> </span>|
-        <span class="menu-item"> <a href=""> Menu3 </a> </span>
+        <span class="menu-item"> <a href=""> Habitat </a> </span>|
+        <span class="menu-item"> <a href=""> Food </a> </span>|
+        <span class="menu-item"> <a href=""> Characteristics </a> </span>
     </div>
 
     <div id="content">
-        <div class="column"> This is a column </div>
-        <div class="column"> This is a column</div>
-        <div class="column"> This is a column</div>
+        <div class="column"> <br>
+            <img src="dolphin1.jpg" width="200"> <br> <br>
+            <img src="dolphin2.jpg" width="200"> <br> <br>
+            <img src="dolphin3.jpg" width="170"> </div>
+
+        <div class="column"> <br> <br> <iframe width="350" height="200" src="https://www.youtube.com/embed/RHYGt9Ykjog" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe> </div>
+        <div class="column">
+            <span id="facts">  <ul>
+                <li> This is a fact </li>
+                <li> This is a fact </li>
+                <li> This is a fact </li>
+                <li> This is a fact </li>
+                <li> This is a fact </li>
+            </ul>
+          </span>
+        </div>
     </div>
 
-    <div id="footer">
-        This is my footer
-    </div>
+
 
 </body>
 
