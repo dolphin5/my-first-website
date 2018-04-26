@@ -1,0 +1,109 @@
+<html>
+
+<head>
+
+    <title> Javascript </title>
+
+    <style type="text/css">
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            float: left;
+            margin: 10px;
+        }
+
+        #red-circle {
+            background-color: red;
+        }
+
+        #blue-circle {
+            background-color: blue;
+        }
+
+        #yellow-circle {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myButton">  Click me to change text! </button>
+    <br>
+    <p id="text"> Hi World! </p>
+
+    <button id="Button2"> Click me to change some more text </button>
+    <br>
+    <p id="text2"> Missy, </p>
+
+    <p id="styledText"> This is some styled text </p>
+    <button id="Button3"> Click me to change the style of the text </button>
+
+    <br>
+    <br>
+
+
+    <div class="circle" id="red-circle"> </div>
+    <div class="circle" id="blue-circle"> </div>
+    <div class="circle" id="yellow-circle"> </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button id="Button4"> Click me to return the circles </button>
+
+
+
+    <script type="text/javascript">
+        //alert('Page Loading!!!');
+        //document.getElementById('text').innerHTML = "Hi Hannah!";
+        //var p = document.getElementById('text');
+        //p.innerHTML = "Hi Hannah Jean!";
+
+        console.log("page loading");
+
+        document.getElementById('myButton').onclick = function() {
+            console.log("Button click event");
+            //alert("Button Clicked");
+            document.getElementById('text').innerHTML = "Hi Hannah!";
+        }
+
+        document.getElementById('Button2').onclick = function() {
+            console.log("Button click event");
+            //alert("Button Clicked");
+            document.getElementById('text2').innerHTML =
+                "By the way " + document.getElementById('text2').innerHTML + "you are awesome";
+        }
+
+        document.getElementById('Button3').onclick = function() {
+            document.getElementById("styledText").style.color = "orange";
+            document.getElementById("styledText").style.fontWeight = "bold";
+            document.getElementById("styledText").style.fontSize = "30px";
+
+        }
+
+        document.getElementById('blue-circle').onclick = function() {
+            document.getElementById('blue-circle').style.display = "none";
+        }
+        document.getElementById('red-circle').onclick = function() {
+            document.getElementById('red-circle').style.display = "none";
+        }
+        document.getElementById('yellow-circle').onclick = function() {
+            document.getElementById('yellow-circle').style.display = "none";
+        }
+
+        document.getElementById('Button4').onclick = function() {
+            document.getElementById('blue-circle').style.display = "inline";
+            document.getElementById('red-circle').style.display = "inline";
+            document.getElementById('yellow-circle').style.display = "inline";
+        }
+      </script>
+</body>
+
+</html>
