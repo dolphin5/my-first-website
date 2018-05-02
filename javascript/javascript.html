@@ -58,6 +58,13 @@
 
     <button id="Button4"> Click me to return the circles </button>
 
+    <br>
+    <br>
+
+    <input type="text" id="text5" />
+    <button id="Button5"> Click me to change the text </button>
+    <p id="text3"> This is some text </p>
+
 
 
     <script type="text/javascript">
@@ -103,7 +110,18 @@
             document.getElementById('red-circle').style.display = "inline";
             document.getElementById('yellow-circle').style.display = "inline";
         }
-      </script>
+
+
+
+
+
+
+        document.getElementById('Button5').onclick = function() {
+            var textEntered = "";
+            textEntered = document.getElementById('text5').value;
+            document.getElementById('text3').innerHTML = textEntered;
+        }
+    </script>
 </body>
 
 </html>
